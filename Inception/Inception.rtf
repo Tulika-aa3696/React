@@ -1,0 +1,189 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red221\green32\blue103;\red102\green177\blue50;\red0\green0\blue0;
+\red251\green2\blue7;\red255\green255\blue255;\red252\green39\blue18;\red0\green0\blue0;\red109\green109\blue109;
+\red70\green137\blue204;\red193\green193\blue193;\red140\green211\blue254;\red194\green126\blue101;\red202\green202\blue202;
+\red66\green179\blue255;\red212\green214\blue154;\red205\green173\blue106;\red24\green24\blue24;\red221\green32\blue103;
+\red252\green39\blue18;\red109\green109\blue109;\red70\green137\blue204;\red140\green211\blue254;\red194\green126\blue101;
+\red202\green202\blue202;\red24\green24\blue24;\red66\green179\blue255;\red212\green214\blue154;}
+{\*\expandedcolortbl;;\cssrgb\c90234\c23206\c47866;\cssrgb\c46532\c73327\c25364;\cssrgb\c0\c0\c0;
+\cssrgb\c100000\c14913\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c100000\c25271\c7591;\csgray\c0\c0;\cssrgb\c50196\c50196\c50196;
+\cssrgb\c33725\c61176\c83922;\cssrgb\c80000\c80000\c80000;\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c30980\c75686\c100000;\cssrgb\c86275\c86275\c66667;\cssrgb\c84314\c72941\c49020;\cssrgb\c12157\c12157\c12157;\cssrgb\c90234\c23206\c47866;
+\cssrgb\c100000\c25271\c7591;\cssrgb\c50196\c50196\c50196;\cssrgb\c33725\c61176\c83922;\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c12157\c12157\c12157;\cssrgb\c30980\c75686\c100000;\cssrgb\c86275\c86275\c66667;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww34000\viewh21400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 \ul \ulc0 Module-01: Inception\
+\
+
+\fs28 React is a library not a framework
+\fs36 \
+
+\f1\b0 \ulnone \
+\cf2 1. 
+\f0\b \ul How to use Import to create to our Application:
+\f1\b0 \cf0 \ulnone \
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\fs28 \cf0 {\listtext	a.	}We need to configure our project to use React( because browser does not know that what is React toh react ko use Karne ke like humei pane project ko configure Karna hoga )\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+			
+\f0\b \cf3 \ul \ulc3 Method-01\'97\'97>Using CDN links\
+
+\f1\b0 \cf0 \ulnone \
+				
+\fs24 \expnd0\expndtw0\kerning0
+Content Delivery Networks (CDNs) provide a way to include libraries like React in your web projects without having to download and host the files yourself. By including these CDN links in your HTML file, you can 				quickly set up a React project without the need for a local build setup. \
+\cf4 \cb5 \
+\cb6                     
+\fs28 \cf7 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> \
+					
+\f0\b\fs24 \cf4 React
+\f1\b0 : This is the core library used to define and create React components.
+\fs28 \
+  				\cf7 \cb8 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>. \cf4 \cb6  \
+					
+\f0\b\fs24 ReactDOM
+\f1\b0 : This library is used to render React components to the DOM and handle updates.\
+
+\fs28 \cf6 \cb1 \
+
+\fs24 \cf4 \cb8 				Plain javascript code is present inside these files which are developed by the Facebook developers.\
+\
+\
+
+\f0\b\fs36 \cf2 2. \ul How to use React in the Application:\
+
+\f1\b0\fs26 \cf4 \ulnone 	\
+	
+\f0\b \cf3 \ul Create index.html file:
+\f1\b0 \cf4 \ulnone \
+\
+		\cf7 \cb6 <!DOCTYPE html>\
+\pard\pardeftab720\partightenfactor0
+\cf7 		<html lang="en">\
+		<head>\
+    			<meta charset="UTF-8">\
+   			 <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    		<title>Document</title>\cb8 \
+		<link rel="stylesheet" href="index.css">\cf11 \cb1 \
+		\cf7 \cb8 <\cb6 /head>\
+		<body>\
+    			<div id="root"></div>\
+    			<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>\
+    			<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>\
+    			<script src="./app.js"></script>\
+		</body>\
+		</html>
+\fs24 \
+\cf11 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 	
+\f0\b \cf3 \ul Create app.js file: 
+\f1\b0 \cf4 \ulnone \
+\
+	
+\fs26 \cf7 \cb8 const heading = React.createElement("h1", \{\}, "Hello World from React!"); \cf4 Here \{\} is used to provide attribute to the element. \cf7 \
+\pard\pardeftab720\partightenfactor0
+\cf7 	const root = ReactDOM.createRoot(document.getElementById("root"));\
+\pard\pardeftab720\partightenfactor0
+\cf7 	root.render(heading);\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 \
+	
+\f0\b \cf3 \ul Create index.css for styling:\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs24 \cf7 \ulnone 	#heading\{\
+    		color:red;\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 	Now, understand that:\
+		\cf12 \cb18 React\cf11 .\cf16 createElement()\cf4 \cb8  -> creates the object and not the element. It takes 3 parameters \ul 1. Type:\ulnone  HTML Element you are creating. \ul 2. Props:\ulnone  \cf0 \cb1 specifies the properties (or attributes) of the element. \ul 3. Children:\ulnone  Text content/child 							Nodes.\cf4 \cb8 \
+		\
+\
+	
+\f0\b\fs28 \cf19 To create the nested structure like below:
+\f1\b0\fs24 \cf4 \ul \
+\ulnone \
+		<div id=\'93Parent\'94>\
+		<div id=\'93child\'94>\
+			<h1> Hello World <h1>\
+		</div>\
+		</div>\
+\
+->	\cf5 const parent = React.createElement("div",\{id:"Parent"\},\
+    		React.createElement("div",\{id:"child"\},\
+        		React.createElement("h1",\{\},"Hello World!")));\
+\pard\pardeftab720\partightenfactor0
+\cf5 	const root=ReactDOM.createRoot(document.getElementById("root"));\
+	root.render(parent);\cf11 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb8 \
+	
+\f0\b\fs28 \cf19 To create the Siblings
+\f1\b0\fs24 \cf4 : We create the array of childrens as the third argument.\
+	\
+->   \cf7 const parent = React.createElement("div",\{id:"Parent"\},\
+    	React.createElement("div",\{id:"child"\},\
+        [React.createElement("h1",\{\},"Hello World as 1 sibling!"),\
+            React.createElement("h2",\{\},"Hello World as 2 sibling!\'94)]));\
+\pard\pardeftab720\partightenfactor0
+\cf7 	const root=ReactDOM.createRoot(document.getElementById("root"));\
+	root.render(parent);\
+\pard\pardeftab720\partightenfactor0
+\cf4 \ul \ulc4 \
+\
+\ulnone 	But react will throw error but we will solve this in upcoming episodes.\
+\
+	But you yourself see this is very complicated then how react is making our tasks easy?\'97>This is where \ul jsx\ulnone  comes into play this makes our tasks easy.Many people thought that react can be written only inside jsx but this is not true 	react can also be written outside of jsx as we have done above but this is complicated hence we used react inside jsx.\
+\
+	Agar hamare html document Mei main div ke andar kuch aur bhi as child nodes present hai toh woh bhi replace ho janna with the content present inside the react(app.js) for example:\
+	If\'97>html file looks like this-\
+\
+\cf20 \cb8 \outl0\strokewidth0 \strokec21 	<!\strokec22 DOCTYPE\strokec11  \strokec23 html\strokec21 >\strokec11 \
+\pard\pardeftab720\partightenfactor0
+\cf20 \strokec21 	<\strokec22 html\strokec11  \strokec23 lang\strokec11 =\strokec24 "en"\strokec21 >\strokec11 \
+\strokec21 	<\strokec22 head\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 meta\strokec11  \strokec23 charset\strokec11 =\strokec24 "UTF-8"\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 meta\strokec11  \strokec23 name\strokec11 =\strokec24 "viewport"\strokec11  \strokec23 content\strokec11 =\strokec24 "width=device-width, initial-scale=1.0"\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 title\strokec21 >\strokec11 Document\strokec21 </\strokec22 title\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 link\strokec11  \strokec23 rel\strokec11 =\strokec24 "stylesheet"\strokec11  \strokec23 href\strokec11 =\strokec24 "index.css"\strokec21 >\strokec11 \
+\strokec21 	</\strokec22 head\strokec21 >\strokec11 \
+\strokec21 	<\strokec22 body\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 div\strokec11  \strokec23 id\strokec11 =\strokec24 "root"\strokec21 >\strokec11 \
+        		\strokec21 <\strokec22 div\strokec21 >\strokec11  Hii!! This me present as child node in the Main div.\strokec21 </\strokec22 div\strokec21 >. \cf4 Ye replace ho jayega with the content of the app.js react code written below.\cf20 \strokec11 \
+    		\strokec21 </\strokec22 div\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 script\strokec25  \strokec23 crossorigin\strokec25  \strokec23 src\strokec25 =\strokec24 "https://unpkg.com/react@18/umd/react.development.js"\strokec21 ></\strokec22 script\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 script\strokec25  \strokec23 crossorigin\strokec25  \strokec23 src\strokec25 =\strokec24 "https://unpkg.com/react-dom@18/umd/react-dom.development.js"\strokec21 ></\strokec22 script\strokec21 >\strokec11 \
+    		\strokec21 <\strokec22 script\strokec25  \strokec23 src\strokec25 =\strokec24 "./app.js"\strokec21 ></\strokec22 script\strokec21 >\strokec11 \
+\strokec21 	</\strokec22 body\strokec21 >\strokec11 \
+\strokec21 	</\strokec22 html\strokec21 >\
+\cf21 \cb26 \
+\
+\cf4 \cb8 	Then the content inside main div will be replaced by\
+\cf20 \strokec22 	const\strokec11  \strokec27 parent\strokec11  \strokec25 =\strokec11  \strokec23 React\strokec11 .\strokec28 createElement\strokec11 (\strokec24 "div"\strokec11 ,\{\strokec23 id:\strokec24 "Parent"\strokec11 \},\
+    	\strokec23 React\strokec11 .\strokec28 createElement\strokec11 (\strokec24 "div"\strokec11 ,\{\strokec23 id:\strokec24 "child"\strokec11 \},\
+        	[\strokec23 React\strokec11 .\strokec28 createElement\strokec11 (\strokec24 "h1"\strokec11 ,\{\},\strokec24 "Hello World as 1 sibling!"\strokec11 ),\
+            	\strokec23 React\strokec11 .\strokec28 createElement\strokec11 (\strokec24 "h2"\strokec11 ,\{\},\strokec24 "Hello World as 2 sibling!"\strokec11 )]\
+    		)\
+	);\
+\strokec22 	const\strokec11  \strokec27 root\strokec25 =\strokec23 ReactDOM\strokec11 .\strokec28 createRoot\strokec11 (\strokec23 document\strokec11 .\strokec28 getElementById\strokec11 (\strokec24 "root"\strokec11 ));\
+\pard\pardeftab720\partightenfactor0
+\cf20 \strokec27 	root\strokec11 .\strokec28 render\strokec11 (\strokec23 parent\strokec11 );\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb8 \outl0\strokewidth0 	This content.And this is done by this statement:\cf7 root.render(parent);\cf4 \
+	(Aisa isliye because sabre pehele html page scan kia jayega what pr child div usko milega uske baad script tag se link pr Jaake who root div ke content ko replace kardega.)\
+	\
+	React only working with div id-root(ya phr jisko createRoot se root naya h in react)iss root ke Aage peeche jo bhi sibling elements h react does not care.\
+\
+}
