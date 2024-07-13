@@ -1,0 +1,315 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red0\green0\blue0;\red0\green0\blue0;
+\red140\green211\blue254;\red193\green193\blue193;\red221\green32\blue103;\red254\green219\blue205;\red70\green137\blue204;
+\red66\green179\blue255;\red202\green202\blue202;\red67\green192\blue160;\red212\green214\blue154;\red194\green126\blue101;
+\red85\green142\blue40;\red252\green39\blue18;\red243\green235\blue10;\red251\green2\blue7;\red67\green192\blue160;
+\red212\green214\blue154;\red18\green145\blue206;\red18\green145\blue206;\red252\green39\blue18;\red243\green235\blue10;
+\red109\green109\blue109;\red89\green138\blue67;\red254\green209\blue207;\red246\green199\blue217;\red183\green111\blue179;
+\red109\green109\blue109;\red255\green255\blue255;\red255\green250\blue131;\red167\green197\blue152;\red255\green252\blue171;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\cssrgb\c0\c0\c0;\csgray\c0\c0;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c80000\c80000\c80000;\cssrgb\c90234\c23206\c47866;\cssrgb\c100000\c88718\c84032;\cssrgb\c33725\c61176\c83922;
+\cssrgb\c30980\c75686\c100000;\cssrgb\c83137\c83137\c83137;\cssrgb\c30588\c78824\c69020;\cssrgb\c86275\c86275\c66667;\cssrgb\c80784\c56863\c47059;
+\cssrgb\c39975\c61335\c20601;\cssrgb\c100000\c25271\c7591;\cssrgb\c96264\c92423\c0;\cssrgb\c100000\c14913\c0;\cssrgb\c30588\c78824\c69020;
+\cssrgb\c86275\c86275\c66667;\cssrgb\c0\c63852\c84489;\cssrgb\c0\c63852\c84489;\cssrgb\c100000\c25271\c7591;\cssrgb\c96264\c92423\c0;
+\cssrgb\c50196\c50196\c50196;\cssrgb\c41569\c60000\c33333;\cssrgb\c100000\c85667\c84695;\cssrgb\c97543\c82626\c87966;\cssrgb\c77255\c52549\c75294;
+\cssrgb\c50196\c50196\c50196;\csgray\c100000;\cssrgb\c100000\c97501\c58325;\cssrgb\c70980\c80784\c65882;\cssrgb\c99995\c98371\c72572;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww16640\viewh9020\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 To run the Application we write the command - 
+\f1\b \cf2 npx parcel index.html\
+
+\f0\b0 \cf3 We can use other self defined scripts to initiate the project - This uses package.json Mei 
+\f1\b\fs24 \cf2 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 "scripts"\strokec6 : \{\
+\pard\pardeftab720\partightenfactor0
+\cf2  	\'93start\'94 : \'94parcel index.html\'94,      
+\f0\b0\fs28 \cf3 Mei likho to run the project for development phase.
+\f1\b\fs24 \cf2 \
+	\'93build\'94 : \'93parcel build index.html\'94,  
+\f0\b0\fs28 \cf3 \cb4 \outl0\strokewidth0 Mei likho to run the project for final production phase.
+\f1\b\fs24 \cf2 \cb4 \outl0\strokewidth0 \strokec6 \
+	\'93test\'94 : \'93jest\'94					\
+  \},\
+\
+
+\f0\b0\fs28 \cf3 This is the standard convention followed in industry.\
+\
+Now 
+\f1\b to run the project
+\f0\b0  we will write: 
+\f1\b \cf2 npm run start / npm start\
+								    npm run build\
+\
+
+\fs36 \cf7 \cb8 \ul \ulc7 React Element In JSX:\cb4 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \ulnone \strokec9 	const\strokec6  \strokec10 parent\strokec6  \strokec11 =\strokec6  \strokec12 React\strokec6 .\strokec13 createElement\strokec6 (\strokec14 "div"\strokec6 ,\{\strokec5 id:\strokec14 "Parent"\strokec6 \},\
+    		\strokec12 React\strokec6 .\strokec13 createElement\strokec6 (\strokec14 "div"\strokec6 ,\{\strokec5 id:\strokec14 "child"\strokec6 \},\
+        		[\strokec12 React\strokec6 .\strokec13 createElement\strokec6 (\strokec14 "h1"\strokec6 ,\{\},\strokec14 "Hello World as 1 sibling!"\strokec6 ),\
+            		\strokec12 React\strokec6 .\strokec13 createElement\strokec6 (\strokec14 "h2"\strokec6 ,\{\},\strokec14 "Hello World as 2 sibling!"\strokec6 )]\
+    		)\
+	);\
+\strokec9 	const\strokec6  \strokec10 root\strokec11 =\strokec5 ReactDOM\strokec6 .\strokec13 createRoot\strokec6 (\strokec5 document\strokec6 .\strokec13 getElementById\strokec6 (\strokec14 "root"\strokec6 ));\
+\strokec10 	root\strokec6 .\strokec13 render\strokec6 (\strokec5 parent\strokec6 );
+\fs24 \
+\
+
+\fs26 \cf3 This is the last time we are using this.
+\fs24 \cf2 \
+\
+
+\f0\b0\fs28 \cf3 Ye code agar dekha jaye toh Kathin hai isse better aur asaani se hum html file Mei likh paa rhe toh toh per How React is making our job easy (it is not developer friendly)?\
+\
+\cf15 Hence jsx was introduced by the Facebook developers to create the React elements easily.\
+Even though React can be written without jsx but we use it together to make tasks easier.\
+\
+
+\f1\b \cf16 	const \cb17 jsxHeading \cb4 = \cb17 <h1 id=\'93Heading\'94> Hello World as 1 sibling! <h1>;
+\f0\b0 \cf3 \cb4  ----> This is 
+\f1\b JSX syntax
+\f0\b0 \
+\cf2 			\cf3 |\
+			|\
+			v\
+		This is 
+\f1\b React Element/Object
+\f0\b0 \
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \strokec9 	const\strokec6  \strokec10 root\strokec6  \strokec11 =\strokec6  \strokec5 ReactDOM\strokec6 .\strokec13 createRoot\strokec6 (\strokec5 document\strokec6 .\strokec13 getElementById\strokec6 (\strokec14 "root"\strokec6 ));\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec10 	root\strokec6 .\strokec13 render\strokec6 (\strokec10 jsxHeading\strokec6 );
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs28 \cf2 \
+
+\f1\b \cf15 Jsx is not html/XML inside the javascript but html/xml like syntax.
+\f0\b0 \
+\
+
+\f1\b \ul JSX:
+\f0\b0 \ulnone \
+	\cf3 This is not pure and valid javascript because js engine cannot understand this but js is something which is understandable by the js engine (\cf15 pure javascript= ECMAscript (ES6)\cf3 ).\
+\
+But the code is still working because 
+\f1\b \cf15 parcel
+\f0\b0 \cf3  is doing its thing. The code 
+\f1\b transpiled
+\f0\b0  to js object (
+\f1\b\fs24 \cf18 \cb4 \outl0\strokewidth0 React.createElement()
+\f0\b0\fs28 \cf3 \cb4 \outl0\strokewidth0 \strokec6 ) before reaching to the js engine by parcel (which itself uses 
+\f1\b \cf15 BABEL 
+\f0\b0 \cf3 installed by parcel itself).\
+\
+						
+\f1\b\fs36 \cf7 HTML.                 V/S                 JSX \
+
+\fs28 \cf3 For css :\cf7 	 
+\fs36       	
+\f0\b0\fs28 \cf3 Class											className\
+\
+
+\f1\b Attributes to Jsx :
+\f0\b0   	    Normal											camelCase\
+\
+
+\f1\b For Multiple Lines :
+\f0\b0      Normal                     						wrapped inside the ()\
+\
+
+\f1\b\fs36 \cf7 \ul \ulc7 \
+React Components:\
+
+\f0\b0\fs28 \cf3 \ulnone 1. 
+\f1\b Class based Components (Older way)  
+\f0\b0                     2. 
+\f1\b Functional Components (Newer Way)
+\f0\b0 \
+\
+
+\f1\b \cf15 \ul \ulc15 React Functional Components
+\f0\b0 \cf3 \ulnone : Just a normal javascript function which return some jsx/React Element/bunch of elements. Everything in React is Component.\
+\
+
+\f1\b \cf21 Const fn = () => true ;                		Const fn = () => \{						\cf22 \cb4 \outl0\strokewidth0 Const fn = () => (true) ;								\cf22 Const fn \{\
+																																			return (true) \};	\cf21 \cb4 \outl0\strokewidth0 \strokec6 \
+						   \cf3 = equal to =\cf21 				return true;    \cf3 =equal to=										\cb4 \outl0\strokewidth0 =equal to=		\cf21 \cb4 \outl0\strokewidth0 \strokec6 \
+												\}\
+\
+
+\f0\b0 \cf3 Valid Functional component: \
+	 |_____________________|\
+			|\
+			|\
+			v\
+	
+\f1\b \cf16 const \cb17 jsxHeading\cb4  = () => <h1 id=\'93Heading\'94> This is the React Functional Component <h1>;\
+
+\f0\b0 						\
+					\cf3 or\cf16 \
+\
+	
+\f1\b \cb4 \outl0\strokewidth0 const \cf2 \cb17 jsxHeading\cf16 \cb4  = () => \{\
+\
+		return <h1 id=\'93Heading\'94> This is the React Functional Component <h1>;\
+	\}\
+					
+\f0\b0 \cf3 or\
+
+\f1\b \cf2 	\cf23 const \cb24 jsxHeading\cb4  = () => (<h1 id=\'93Heading\'94> This is the React Functional Component <h1>);\
+\
+					
+\f0\b0 \cf3 or
+\f1\b \cf23 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf23 	const \cb24 jsxHeading\cb4  \{\
+		return (<h1 id=\'93Heading\'94> This is the React Functional Component <h1>);\
+	\}
+\f0\b0 \cf16 \
+\pard\pardeftab720\partightenfactor0
+\cf16 \
+\
+\cf3 Nested structure :\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \cb4 \outl0\strokewidth0 \strokec9 	const\strokec6  \strokec13 nestedstructure\strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  (\
+\
+    		\strokec25 <\strokec9 div\strokec6  \strokec5 className\strokec11 =\strokec14 "parent"\strokec25 >\strokec6 \
+        		\strokec25 <\strokec9 h2\strokec25 >\strokec6 Child Element\strokec25 </\strokec9 h2\strokec25 >\strokec6 \
+        		\strokec25 <\strokec9 div\strokec25 >\strokec6 2 child Element\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		\strokec25 </\strokec9 div\strokec25 >\
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec6 \
+    		);
+\f0\b0\fs24 \cf6 \cb1 \
+\
+
+\fs28 \cf3 \cb4 To render :\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \strokec26 //For React Element - root.render(jsxHeading)\strokec6 \
+\strokec26 //For React Functional Component - root.render(<jsxHeading2 />)\strokec6 \
+\strokec26 //For React Functional Component - root.render(<jsxHeading3 />)\strokec6 \
+\strokec26 //For React Functional Component - root.render(<nestedstructure />)\strokec6 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf3 But hum Kewal ek hi cheese render car skte h inme se.\
+\
+
+\f1\b Multiple Components agar hai toh kaise sarei per render?
+\f0\b0 \
+\
+\
+
+\f1\b\fs36 \cf7 \cb27 \ul \ulc7 Component Composition :
+\fs28 \cb28 \
+
+\f0\b0 \cf3 \cb4 \ulnone \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \strokec9 	const\strokec6  \strokec13 JsxHeading2\strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  \{\
+    		\strokec29 return\strokec6  \strokec25 <\strokec9 h1\strokec6  \strokec5 id\strokec11 =\strokec14 "Heading"\strokec25 >\strokec6 This is the React Functional Component 1 way \strokec25 </\strokec9 h1\strokec25 >\strokec6 ;\
+	\};\
+\
+\strokec9 	const\strokec6  \strokec13 JsxHeading3\strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  \strokec25 <\strokec9 h1\strokec6  \strokec5 id\strokec11 =\strokec14 "Heading"\strokec25 >\strokec6 This is the React Functional Component 2 way \strokec25 </\strokec9 h1\strokec25 >\strokec6 ;\
+\
+\strokec9 	const\strokec6  \strokec13 Nestedstructure\strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  (\
+\
+    		\strokec25 <\strokec9 div\strokec6  \strokec5 className\strokec11 =\strokec14 "parent"\strokec25 >\
+\strokec6 \
+        		\strokec25 <\strokec12 JsxHeading2\strokec6  \strokec25 /> \cf3 or\cf2  \cf18 \cb4 \outl0\strokewidth0 <JsxHeading2> </JsxHeading2> \cf3 or \cf2 \{JsxHeading2()\}\cb4 \outl0\strokewidth0 \strokec25 \
+\strokec6 \
+        		\strokec25 <\strokec12 JsxHeading3\strokec6  \strokec25 />\
+\strokec6 \
+        		\strokec25 <\strokec9 h2\strokec25 >\strokec6 Child Element\strokec25 </\strokec9 h2\strokec25 >\
+\strokec6 \
+        		\strokec25 <\strokec9 div\strokec25 >\strokec6 2 child Element\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		);\
+\strokec9 	const\strokec6  \strokec10 root\strokec6  \strokec11 =\strokec6  \strokec5 ReactDOM\strokec6 .\strokec13 createRoot\strokec6 (\strokec5 document\strokec6 .\strokec13 getElementById\strokec6 (\strokec14 "root"\strokec6 ));\
+\
+\strokec10 	root\strokec6 .\strokec13 render\strokec6 (\strokec25 <\strokec12 Nestedstructure\strokec6  \strokec25 />\strokec6 );
+\f0\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf15 \cb1 \strokec3 React components must be capitalized to distinguish them from HTML tags.
+\f0\b0 \cf2 \cb4 \strokec6 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf2 \
+\cf3 Jsx Mei \{\} ke andar hum javascript like skte h.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb31 \strokec9 	\cb32 const\strokec6  \strokec10 number\strokec6  \strokec11 =\strokec6  \strokec33 1000\strokec6 ;\cf3 \cb4  \'97> 
+\f0\b0 javascript constant
+\f1\b \cf2 \
+	\cb34 \strokec9 const\strokec6  \strokec13 JsxHeading3\cb4 \strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  \strokec25 <\strokec9 h1\strokec6  \strokec5 id\strokec11 =\strokec14 "Heading"\strokec25 >\strokec6 This is the React Functional Component 2 way \strokec25 </\strokec9 h1\strokec25 >\strokec6 ;
+\f0\b0 \
+	
+\f1\b \strokec9 const\strokec6  \strokec13 Nestedstructure\strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  (\
+    		\strokec25 <\strokec9 div\strokec6  \strokec5 className\strokec11 =\strokec14 "parent"\strokec25 >\strokec6 \
+        		\strokec9 \{\cb32 \strokec10 number\strokec9 \}\cb4  
+\f0\b0 \cf3 \cb31 ---> This is using javascript constant inside the jsx\
+			
+\f1\b \cf2 \cb4 \{\strokec5 console\strokec11 .\strokec13 log\strokec11 (\strokec14 "This is javascipt inside jsx"\strokec11 )\strokec9 \}\
+			\cb34 \{JsxHeading3()\} \cb4  
+\f0\b0 \cf3 ---> isko bhi javascript ki taras likha jaa sakta h
+\f1\b \cf2 \strokec6 \
+        		\strokec25 <\strokec9 h2\strokec25 >\strokec6 Child Element\strokec25 </\strokec9 h2\strokec25 >\strokec6 \
+        		\strokec25 <\strokec9 div\strokec25 >\strokec6 2 child Element\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		);\
+\strokec9 	const\strokec6  \strokec10 root\strokec6  \strokec11 =\strokec6  \strokec5 ReactDOM\strokec6 .\strokec13 createRoot\strokec6 (\strokec5 document\strokec6 .\strokec13 getElementById\strokec6 (\strokec14 "root"\strokec6 ));\
+\
+\strokec10 	root\strokec6 .\strokec13 render\strokec6 (\strokec25 <\strokec12 Nestedstructure\strokec6  \strokec25 />\strokec6 );\
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+Jsx Mei hum react element chi like skte hai.\
+\
+	\cf2 \strokec9 const\strokec6  \strokec10 jsxHeading\strokec6  \strokec11 =\strokec6  \strokec25 <\strokec9 h1\strokec6  \strokec5 id\strokec11 =\strokec14 "Heading"\strokec25 >\strokec6 Hello World as 1 sibling!\strokec25 </\strokec9 h1\strokec25 >\strokec6 ;  
+\f0\b0 \cf3 This is React Element 
+\fs24 \cf6 \cb1 \
+
+\f1\b\fs28 \cf3 \cb4 \
+	
+\fs26 \cf2 \strokec9 const\strokec6  \strokec13 Nestedstructure\strokec6  \strokec11 =\strokec6  () \strokec9 =>\strokec6  (\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2     		\strokec25 <\strokec9 div\strokec6  \strokec5 className\strokec11 =\strokec14 "parent"\strokec25 >\strokec6 \
+ \
+        		\strokec9 \{\strokec10 jsxHeading\strokec9 \} 
+\f0\b0\fs28 \cf3  This is React element inside the jsx
+\f1\b\fs26 \cf2 \strokec6 \
+        		\strokec9 \{\strokec5 console\strokec11 .\strokec13 log\strokec11 (\strokec14 "This is javascipt inside jsx"\strokec11 )\strokec9 \}\strokec6 \
+        		\strokec25 <\strokec12 JsxHeading2\strokec6  \strokec25 />\strokec6 \
+        		\strokec25 <\strokec12 JsxHeading3\strokec6  \strokec25 />\strokec6 \
+        		\strokec25 <\strokec9 h2\strokec25 >\strokec6 Child Element\strokec25 </\strokec9 h2\strokec25 >\strokec6 \
+        		\strokec25 <\strokec9 div\strokec25 >\strokec6 2 child Element\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		\strokec25 </\strokec9 div\strokec25 >\strokec6 \
+    		);\
+\strokec9 	const\strokec6  \strokec10 root\strokec6  \strokec11 =\strokec6  \strokec5 ReactDOM\strokec6 .\strokec13 createRoot\strokec6 (\strokec5 document\strokec6 .\strokec13 getElementById\strokec6 (\strokec14 "root"\strokec6 ));\
+\
+\strokec10 	root\strokec6 .\strokec13 render\strokec6 (\strokec25 <\strokec12 Nestedstructure\strokec6  \strokec25 />\strokec6 );
+\f0\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs28 \cf2 \
+
+\f0\b0 \cf3 JSX makes sure that the data present inside the \{\} must get sanitised before executing it to avoid any malicious piece pf code from running.This is useful in cases when the data is from API.\'97>
+\f1\b \cf15 \ul \ulc15 cross side scripting
+\f0\b0 \cf3 \ulnone  kehte hai isse.}
